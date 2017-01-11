@@ -165,6 +165,7 @@ class Enlight_Loader
         if (!isset($path['0'])) {
             return getcwd();
         }
+
         // Make path absolute
         if ($path[0] !== DIRECTORY_SEPARATOR) {
             $path = getcwd().DIRECTORY_SEPARATOR.$path;
