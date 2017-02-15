@@ -9,112 +9,6 @@
             <parameter key="regexp">/([^A-Za-z0-9\.]|-)+/</parameter>
             <parameter key="lowercase">false</parameter>
         </parameter>
-
-        <parameter key="bootstrap.class">Shopware_Bootstrap</parameter>
-        <parameter key="locale_factory.class">Shopware\Components\DependencyInjection\Bridge\Locale</parameter>
-        <parameter key="currency_factory.class">Shopware\Components\DependencyInjection\Bridge\Currency</parameter>
-        <parameter key="currency.class">Zend_Currency</parameter>
-        <parameter key="snippet_resource.class">Enlight_Components_Snippet_Resource</parameter>
-        <parameter key="template_factory.class">Shopware\Components\DependencyInjection\Bridge\Template</parameter>
-        <parameter key="template.class">Enlight_Template_Manager</parameter>
-        <parameter key="session_factory.class">Shopware\Components\DependencyInjection\Bridge\Session</parameter>
-        <parameter key="session.class">Enlight_Components_Session_Namespace</parameter>
-        <parameter key="mailtransport_factory.class">Shopware\Components\DependencyInjection\Bridge\MailTransport</parameter>
-        <parameter key="mailtransport.class">Zend_Mail_Transport_Abstract</parameter>
-        <parameter key="mail_factory.class">Shopware\Components\DependencyInjection\Bridge\Mail</parameter>
-        <parameter key="mail.class">Enlight_Components_Mail</parameter>
-        <parameter key="templatemail_factory.class">Shopware\Components\DependencyInjection\Bridge\TemplateMail</parameter>
-        <parameter key="templatemail.class">Shopware_Components_TemplateMail</parameter>
-        <parameter key="plugins_factory.class">Shopware\Components\DependencyInjection\Bridge\Plugins</parameter>
-        <parameter key="plugins.class">Enlight_Plugin_PluginManager</parameter>
-        <parameter key="router_factory.class">Shopware\Components\DependencyInjection\Bridge\Router</parameter>
-        <parameter key="router.class">Shopware\Components\Routing\Router</parameter>
-        <parameter key="dispatcher.class">Enlight_Controller_Dispatcher_Default</parameter>
-        <parameter key="front_factory.class">Shopware\Components\DependencyInjection\Bridge\Front</parameter>
-        <parameter key="front.class">Enlight_Controller_Front</parameter>
-        <parameter key="date.class">Zend_Date</parameter>
-        <parameter key="loader.class">Enlight_Loader</parameter>
-        <parameter key="snippets.class">Shopware_Components_Snippet_Manager</parameter>
-        <parameter key="acl.class">Shopware_Components_Acl</parameter>
-        <parameter key="cron_adapter.class">Enlight_Components_Cron_Adapter_DBAL</parameter>
-        <parameter key="cron.class">Enlight_Components_Cron_Manager</parameter>
-        <parameter key="db_factory.class">Shopware\Components\DependencyInjection\Bridge\Db</parameter>
-        <parameter key="db.class">Enlight_Components_Db_Adapter_Pdo_Mysql</parameter>
-        <parameter key="http_client_factory.class">Shopware\Components\HttpClient\GuzzleFactory</parameter>
-        <parameter key="http_client.class">Shopware\Components\HttpClient\GuzzleHttpClient</parameter>
-        <parameter key="cache_factory.class">Shopware\Components\DependencyInjection\Bridge\Cache</parameter>
-        <parameter key="cache.class">Zend_Cache_Core</parameter>
-        <parameter key="config_factory.class">Shopware\Components\DependencyInjection\Bridge\Config</parameter>
-        <parameter key="config.class">Shopware_Components_Config</parameter>
-        <parameter key="events.class">Shopware\Components\ContainerAwareEventManager</parameter>
-        <parameter key="hooks.class">Enlight_Hook_HookManager</parameter>
-        <parameter key="model_config.class">Shopware\Components\Model\Configuration</parameter>
-        <parameter key="model_factory.class">Shopware\Components\DependencyInjection\Bridge\Models</parameter>
-        <parameter key="models.class">Shopware\Components\Model\ModelManager</parameter>
-        <parameter key="models_metadata_cache.class">Doctrine\Common\Cache\Cache</parameter>
-        <parameter key="dbal_connection_factory.class">Shopware\Components\DependencyInjection\Bridge\Db</parameter>
-        <parameter key="dbal_connection.class">Doctrine\DBAL\Connection</parameter>
-        <parameter key="model_annotations_factory.class">Shopware\Components\DependencyInjection\Bridge\ModelAnnotation</parameter>
-        <parameter key="model_annotations.class">Doctrine\ORM\Mapping\Driver\AnnotationDriver</parameter>
-        <parameter key="model_event_manager.class">Doctrine\Common\EventManager</parameter>
-        <parameter key="model_repository_factory.class">Shopware\Components\Model\ProxyAwareRepositoryFactory</parameter>
-        <parameter key="event_subscriber.class">Shopware\Components\Model\EventSubscriber</parameter>
-        <parameter key="order_history_subscriber.class">Shopware\Models\Order\OrderHistorySubscriber</parameter>
-        <parameter key="category_subscriber.class">Shopware\Components\Model\CategorySubscriber</parameter>
-        <parameter key="category_duplication.class">Shopware\Components\CategoryHandling\CategoryDuplicator</parameter>
-        <parameter key="category_denormalization.class">Shopware\Components\Model\CategoryDenormalization</parameter>
-        <parameter key="shopware.holiday_table_updater.class">Shopware\Components\HolidayTableUpdater</parameter>
-        <parameter key="zend.escaper.class">Zend\Escaper\Escaper</parameter>
-        <parameter key="shopware.escaper.class">Shopware\Components\Escaper\Escaper</parameter>
-        <parameter key="shopware.snippet_database_handler.class">Shopware\Components\Snippet\DatabaseHandler</parameter>
-        <parameter key="shopware.snippet_validator.class">Shopware\Components\Snippet\SnippetValidator</parameter>
-        <parameter key="shopware.snippet_query_handler.class">Shopware\Components\Snippet\QueryHandler</parameter>
-        <parameter key="shopware.cache_manager.class">Shopware\Components\CacheManager</parameter>
-        <parameter key="media_subscriber.class">Shopware\Models\Media\MediaSubscriber</parameter>
-        <parameter key="thumbnail_generator_basic.class">Shopware\Components\Thumbnail\Generator\Basic</parameter>
-        <parameter key="thumbnail_manager.class">Shopware\Components\Thumbnail\Manager</parameter>
-        <parameter key="multi_edit.product.class">Shopware\Components\MultiEdit\Resource\Product</parameter>
-        <parameter key="multi_edit.product.value.class">Shopware\Components\MultiEdit\Resource\Product\Value</parameter>
-        <parameter key="multi_edit.product.dql_helper.class">Shopware\Components\MultiEdit\Resource\Product\DqlHelper</parameter>
-        <parameter key="multi_edit.product.backup.class">Shopware\Components\MultiEdit\Resource\Product\Backup</parameter>
-        <parameter key="multi_edit.product.filter.class">Shopware\Components\MultiEdit\Resource\Product\Filter</parameter>
-        <parameter key="multi_edit.product.queue.class">Shopware\Components\MultiEdit\Resource\Product\Queue</parameter>
-        <parameter key="multi_edit.product.batch_process.class">Shopware\Components\MultiEdit\Resource\Product\BatchProcess</parameter>
-        <parameter key="multi_edit.product.grammar.class">Shopware\Components\MultiEdit\Resource\Product\Grammar</parameter>
-        <parameter key="legacy_struct_converter.class">Shopware\Components\Compatibility\LegacyStructConverter</parameter>
-        <parameter key="legacy_event_manager.class">Shopware\Components\Compatibility\LegacyEventManager</parameter>
-        <parameter key="query_alias_mapper.class">Shopware\Components\QueryAliasMapper</parameter>
-        <parameter key="file_system.class">Symfony\Component\Filesystem\Filesystem</parameter>
-        <parameter key="first_run_wizard_plugin_store.class">Shopware\Bundle\PluginInstallerBundle\Service\FirstRunWizardPluginStoreService</parameter>
-        <parameter key="http_cache_warmer.class">Shopware\Components\HttpCache\CacheWarmer</parameter>
-        <parameter key="shop_page_menu.class">Shopware\Components\SitePageMenu</parameter>
-        <parameter key="emotion_device_configuration.class">Shopware\Components\Emotion\DeviceConfiguration</parameter>
-        <parameter key="validator.validator_factory.class">Shopware\Bundle\FormBundle\DependencyInjection\Factory\ConstraintValidatorFactory</parameter>
-        <parameter key="validator.class">Symfony\Component\Validator\Validator\ValidatorInterface</parameter>
-        <parameter key="validator.email.class">Shopware\Components\Validator\EmailValidator</parameter>
-        <parameter key="sitemapxml.repository.class">Shopware\Components\SitemapXMLRepository</parameter>
-        <parameter key="attribute_subscriber.class">Shopware\Components\AttributeSubscriber</parameter>
-        <parameter key="error_subscriber.class">Shopware\Components\ErrorSubscriber</parameter>
-        <parameter key="config_writer.class">Shopware\Components\ConfigWriter</parameter>
-        <parameter key="shopware.plugin.config_writer.class">Shopware\Components\Plugin\ConfigWriter</parameter>
-        <parameter key="shopware.plugin.cached_config_reader.class">Shopware\Components\Plugin\CachedConfigReader</parameter>
-        <parameter key="shopware.plugin.config_reader.class">Shopware\Components\Plugin\DBALConfigReader</parameter>
-        <parameter key="shopware_product_stream.criteria_factory.class">Shopware\Components\ProductStream\CriteriaFactory</parameter>
-        <parameter key="shopware_product_stream.repository.class">Shopware\Components\ProductStream\Repository</parameter>
-        <parameter key="shopware_product_stream.facet_filter.class">Shopware\Components\ProductStream\FacetFilter</parameter>
-        <parameter key="shopware.upload_max_size_validator.class">Shopware\Components\UploadMaxSizeValidator</parameter>
-        <parameter key="shopware.csrftoken_validator.class">Shopware\Components\CSRFTokenValidator</parameter>
-        <parameter key="shopware_core.license_service_subscriber.class">Shopware\Components\License\Service\LicenseServiceSubscriber</parameter>
-        <parameter key="shopware_core.local_license_unpack_service.class">Shopware\Components\License\Service\LocalLicenseUnpackService</parameter>
-        <parameter key="shopware.openssl_verificator.class">Shopware\Components\OpenSSLVerifier</parameter>
-        <parameter key="shopware.number_range_incrementer.class">Shopware\Components\NumberRangeIncrementer</parameter>
-        <parameter key="shopware.plugin_xml_plugin_info_reader.class">Shopware\Components\Plugin\XmlPluginInfoReader</parameter>
-        <parameter key="shopware.plugin_requirement_validator.class">Shopware\Components\Plugin\RequirementValidator</parameter>
-        <parameter key="slugify.class">Cocur\Slugify\Slugify</parameter>
-        <parameter key="shopware.slug.class">Shopware\Components\Slug\CocurSlugifyAdapter</parameter>
-        <parameter key="shopware.requirements.class">Shopware\Components\Check\Requirements</parameter>
-        <parameter key="shopware.emotion_component_installer.class">Shopware\Components\Emotion\ComponentInstaller</parameter>
-        <parameter key="shopware.plugin_payment_installer.class">Shopware\Components\Plugin\PaymentInstaller</parameter>
     </parameters>
 
     <services>
@@ -122,32 +16,32 @@
         <service id="PasswordEncoder" synthetic="true" />
         <service id="db_connection"   synthetic="true" />
 
-        <service id="bootstrap" class="%bootstrap.class%">
+        <service id="bootstrap" class="Shopware_Bootstrap">
             <argument type="service" id="service_container"/>
             <deprecated>The "%service_id%" service is deprecated since 5.2 and will be removed in 5.3.</deprecated>
         </service>
 
-        <service id="locale_factory" class="%locale_factory.class%" />
+        <service id="locale_factory" class="Shopware\Components\DependencyInjection\Bridge\Locale" />
         <service id="shopware.locale" alias="locale" />
         <service id="locale" class="Zend_Locale">
             <factory service="locale_factory" method="factory" />
             <argument type="service" id="service_container"/>
         </service>
 
-        <service id="currency_factory" class="%currency_factory.class%"/>
-        <service id="currency" class="%currency.class%">
+        <service id="currency_factory" class="Shopware\Components\DependencyInjection\Bridge\Currency"/>
+        <service id="currency" class="Zend_Currency">
             <factory service="currency_factory" method="factory" />
             <argument type="service" id="service_container"/>
             <argument type="service" id="shopware.locale"/>
         </service>
 
-        <service id="snippet_resource" class="%snippet_resource.class%">
+        <service id="snippet_resource" class="Enlight_Components_Snippet_Resource">
             <argument type="service" id="snippets"/>
             <argument>%shopware.snippet.showSnippetPlaceholder%</argument>
         </service>
 
-        <service id="template_factory" class="%template_factory.class%" />
-        <service id="template" class="%template.class%">
+        <service id="template_factory" class="Shopware\Components\DependencyInjection\Bridge\Template" />
+        <service id="template" class="Enlight_Template_Manager">
             <factory service="template_factory" method="factory" />
             <argument type="service" id="events"/>
             <argument type="service" id="snippet_resource"/>
@@ -155,38 +49,38 @@
             <argument>%shopware.template%</argument>
         </service>
 
-        <service id="session_factory" class="%session_factory.class%" />
-        <service id="session" class="%session.class%">
+        <service id="session_factory" class="Shopware\Components\DependencyInjection\Bridge\Session" />
+        <service id="session" class="Enlight_Components_Session_Namespace">
             <factory service="session_factory" method="factory" />
             <argument type="service" id="service_container"/>
         </service>
 
-        <service id="mailtransport_factory" class="%mailtransport_factory.class%" />
+        <service id="mailtransport_factory" class="Shopware\Components\DependencyInjection\Bridge\MailTransport" />
         <service id="shopware.mail_transport" alias="MailTransport" />
-        <service id="MailTransport" class="%mailtransport.class%">
+        <service id="MailTransport" class="Zend_Mail_Transport_Abstract">
             <factory service="mailtransport_factory" method="factory" />
             <argument type="service" id="Loader"/>
             <argument type="service" id="config"/>
             <argument>%shopware.mail%</argument>
         </service>
 
-        <service id="mail_factory" class="%mail_factory.class%" />
-        <service id="mail" class="%mail.class%">
+        <service id="mail_factory" class="Shopware\Components\DependencyInjection\Bridge\Mail" />
+        <service id="mail" class="Enlight_Components_Mail">
             <factory service="mail_factory" method="factory" />
             <argument type="service" id="service_container"/>
             <argument type="service" id="config"/>
             <argument>%shopware.mail%</argument>
         </service>
 
-        <service id="templatemail_factory" class="%templatemail_factory.class%" />
-        <service id="templatemail" class="%templatemail.class%">
+        <service id="templatemail_factory" class="Shopware\Components\DependencyInjection\Bridge\TemplateMail" />
+        <service id="templatemail" class="Shopware_Components_TemplateMail">
             <factory service="templatemail_factory" method="factory" />
             <argument type="service" id="service_container"/>
         </service>
 
-        <service id="plugins_factory" class="%plugins_factory.class%" />
+        <service id="plugins_factory" class="Shopware\Components\DependencyInjection\Bridge\Plugins" />
         <service id="plugin_manager" alias="plugins" />
-        <service id="plugins" class="%plugins.class%">
+        <service id="plugins" class="Enlight_Plugin_PluginManager">
             <factory service="plugins_factory" method="factory" />
             <argument type="service" id="service_container"/>
             <argument type="service" id="Loader"/>
@@ -195,74 +89,72 @@
             <argument>%shopware.plugin_directories%</argument>
         </service>
 
-        <service id="router_factory" class="%router_factory.class%" />
-        <service id="router" class="%router.class%">
+        <service id="router_factory" class="Shopware\Components\DependencyInjection\Bridge\Router" />
+        <service id="router" class="Shopware\Components\Routing\Router">
             <factory service="router_factory" method="factory" />
             <argument type="service" id="service_container"/>
             <argument type="service" id="events"/>
         </service>
 
-        <service id="dispatcher" class="%dispatcher.class%" />
+        <service id="dispatcher" class="Enlight_Controller_Dispatcher_Default" />
 
-        <service id="front_factory" class="%front_factory.class%" />
-        <service id="front" class="%front.class%">
+        <service id="front_factory" class="Shopware\Components\DependencyInjection\Bridge\Front" />
+        <service id="front" class="Enlight_Controller_Front">
             <factory service="front_factory" method="factory" />
             <argument type="service" id="service_container"/>
             <argument type="service" id="events"/>
             <argument>%shopware.front%</argument>
         </service>
 
-        <service id="date" class="%date.class%">
+        <service id="date" class="Zend_Date">
             <argument type="service" id="locale"/>
         </service>
 
         <service id="shopware.loader" alias="Loader" />
-        <service id="Loader"     class="%loader.class%" />
-        <service id="snippets"   class="%snippets.class%">
+        <service id="Loader"     class="Enlight_Loader" />
+        <service id="snippets"   class="Shopware_Components_Snippet_Manager">
             <argument type="service" id="shopware.model_manager"/>
             <argument>%shopware.plugin_directories%</argument>
             <argument>%shopware.snippet%</argument>
         </service>
 
-        <service id="acl" class="%acl.class%">
+        <service id="acl" class="Shopware_Components_Acl">
             <argument type="service" id="models"/>
         </service>
 
-        <service id="cron_adapter" class="%cron_adapter.class%">
+        <service id="cron_adapter" class="Enlight_Components_Cron_Adapter_DBAL">
             <argument type="service" id="dbal_connection"/>
         </service>
 
-        <service id="cron" class="%cron.class%">
+        <service id="cron" class="Enlight_Components_Cron_Manager">
             <argument type="service" id="cron_adapter"/>
             <argument type="service" id="events"/>
             <argument type="string">Shopware_Components_Cron_CronJob</argument>
         </service>
 
-        <service id="db_factory" class="%db_factory.class%"/>
         <service id="shopware.db" alias="db"/>
-        <service id="db" class="%db.class%">
-            <factory service="db_factory" method="createEnlightDbAdapter" />
+        <service id="db" class="Enlight_Components_Db_Adapter_Pdo_Mysql">
+            <factory class="Shopware\Components\DependencyInjection\Bridge\Db" method="createEnlightDbAdapter" />
             <argument type="service" id="dbal_connection"/>
             <argument>%shopware.db%</argument>
         </service>
 
-        <service id="guzzle_http_client_factory" alias="http_client_factory"/>
-        <service id="http_client_factory" class="%http_client_factory.class%" />
+        <service id="guzzle_http_client_factory" class="Shopware\Components\HttpClient\GuzzleFactory" />
 
-        <service id="http_client" class="%http_client.class%">
-            <argument type="service" id="http_client_factory"/>
+        <service id="http_client" class="Shopware\Components\HttpClient\GuzzleHttpClient">
+            <argument type="service" id="guzzle_http_client_factory"/>
         </service>
 
-        <service id="cache_factory" class="%cache_factory.class%"/>
-        <service id="cache" class="%cache.class%">
+        <service id="cache_factory" class="Shopware\Components\DependencyInjection\Bridge\Cache"/>
+        <service id="cache" class="Zend_Cache_Core">
             <factory service="cache_factory" method="factory" />
             <argument>%shopware.cache.backend%</argument>
             <argument>%shopware.cache.frontendOptions%</argument>
             <argument>%shopware.cache.backendOptions%</argument>
         </service>
 
-        <service id="config_factory" class="%config_factory.class%" />
-        <service id="config" class="%config.class%">
+        <service id="config_factory" class="Shopware\Components\DependencyInjection\Bridge\Config" />
+        <service id="config" class="Shopware_Components_Config">
             <factory service="config_factory" method="factory" />
             <argument type="service" id="cache" />
             <argument type="service" id="db" on-invalid="ignore"/>
@@ -270,28 +162,28 @@
          </service>
 
         <service id="shopware.event_manager" alias="events" />
-        <service id="events" class="%events.class%">
+        <service id="events" class="Shopware\Components\ContainerAwareEventManager">
             <argument type="service" id="service_container"/>
         </service>
 
         <service id="shopware.hook_manager" alias="Hooks" />
-        <service id="Hooks" class="%hooks.class%">
+        <service id="Hooks" class="Enlight_Hook_HookManager">
             <argument type="service" id="shopware.event_manager" />
             <argument type="service" id="shopware.loader" />
             <argument>%shopware.hook%</argument>
         </service>
 
         <service id="shopware.model_config" alias="ModelConfig" />
-        <service id="ModelConfig" class="%model_config.class%">
+        <service id="ModelConfig" class="Shopware\Components\Model\Configuration">
             <argument>%shopware.Model%</argument>
             <argument type="service" id="cache" />
             <argument type="service" id="model_repository_factory" />
         </service>
 
-        <service id="model_factory" class="%model_factory.class%" />
+        <service id="model_factory" class="Shopware\Components\DependencyInjection\Bridge\Models" />
         <service id="shopware.model_manager" alias="models" />
 
-        <service id="models" class="%models.class%">
+        <service id="models" class="Shopware\Components\Model\ModelManager">
             <factory service="model_factory" method="factory" />
             <argument type="service" id="model_event_manager" />
             <argument type="service" id="shopware.model_config" />
@@ -300,104 +192,103 @@
             <argument type="service" id="shopware.model_annotations" />
          </service>
 
-        <service id="models_metadata_cache" class="%models_metadata_cache.class%">
+        <service id="models_metadata_cache" class="Doctrine\Common\Cache\Cache">
             <factory service="ModelConfig" method="getMetadataCacheImpl" />
         </service>
 
-        <service id="dbal_connection_factory" class="%dbal_connection_factory.class%" />
-        <service id="dbal_connection" class="%dbal_connection.class%">
-            <factory service="dbal_connection_factory" method="createDbalConnection" />
+        <service id="dbal_connection" class="Doctrine\DBAL\Connection">
+            <factory class="Shopware\Components\DependencyInjection\Bridge\Db" method="createDbalConnection" />
             <argument>%shopware.db%</argument>
             <argument type="service" id="ModelConfig"/>
             <argument type="service" id="model_event_manager"/>
             <argument type="service" id="db_connection"/>
         </service>
 
-        <service id="model_annotations_factory" class="%model_annotations_factory.class%" />
+        <service id="model_annotations_factory" class="Shopware\Components\DependencyInjection\Bridge\ModelAnnotation" />
         <service id="shopware.model_annotations" alias="ModelAnnotations" />
-        <service id="ModelAnnotations" class="%model_annotations.class%">
+        <service id="ModelAnnotations" class="Doctrine\ORM\Mapping\Driver\AnnotationDriver">
             <factory service="model_annotations_factory" method="factory" />
             <argument type="service" id="shopware.model_config" />
             <argument>%kernel.root_dir%/engine/Shopware/Models</argument>
         </service>
 
-        <service id="model_event_manager" class="%model_event_manager.class%" public="false" />
+        <service id="model_event_manager" class="Doctrine\Common\EventManager" public="false" />
 
-        <service id="model_repository_factory" class="%model_repository_factory.class%" public="false">
+        <service id="model_repository_factory" class="Shopware\Components\Model\ProxyAwareRepositoryFactory" public="false">
             <argument type="service" id="Hooks" />
         </service>
 
-        <service id="EventSubscriber" class="%event_subscriber.class%" public="false">
+        <service id="EventSubscriber" class="Shopware\Components\Model\EventSubscriber" public="false">
             <argument type="service" id="shopware.event_manager" />
             <tag name="doctrine.event_subscriber" />
         </service>
 
-        <service id="OrderHistorySubscriber" class="%order_history_subscriber.class%" public="false">
+        <service id="OrderHistorySubscriber" class="Shopware\Models\Order\OrderHistorySubscriber" public="false">
             <tag name="doctrine.event_subscriber" />
         </service>
 
-        <service id="CategorySubscriber" class="%category_subscriber.class%">
+        <service id="CategorySubscriber" class="Shopware\Components\Model\CategorySubscriber">
             <argument type="service" id="service_container" />
             <tag name="doctrine.event_subscriber" />
         </service>
 
-        <service id="CategoryDuplicator" class="%category_duplication.class%">
+        <service id="CategoryDuplicator" class="Shopware\Components\CategoryHandling\CategoryDuplicator">
             <argument type="service" id="db_connection" />
             <argument type="service" id="CategoryDenormalization" />
             <argument type="service" id="shopware_attribute.data_persister" />
         </service>
 
-        <service id="CategoryDenormalization" class="%category_denormalization.class%">
+        <service id="CategoryDenormalization" class="Shopware\Components\Model\CategoryDenormalization">
             <argument type="service" id="db_connection" />
         </service>
 
-        <service id="shopware.holiday_table_updater" class="%shopware.holiday_table_updater.class%">
+        <service id="shopware.holiday_table_updater" class="Shopware\Components\HolidayTableUpdater">
             <argument type="service" id="dbal_connection" />
         </service>
 
-        <service id="zend.escaper" class="%zend.escaper.class%" public="false">
+        <service id="zend.escaper" class="Zend\Escaper\Escaper" public="false">
             <argument type="string">utf-8</argument>
         </service>
 
-        <service id="shopware.escaper" class="%shopware.escaper.class%">
+        <service id="shopware.escaper" class="Shopware\Components\Escaper\Escaper">
             <argument type="service" id="zend.escaper" />
         </service>
 
-        <service id="shopware.snippet_database_handler" class="%shopware.snippet_database_handler.class%">
+        <service id="shopware.snippet_database_handler" class="Shopware\Components\Snippet\DatabaseHandler">
             <argument type="service" id="shopware.model_manager" />
             <argument type="service" id="db" />
             <argument>%kernel.root_dir%</argument>
         </service>
 
-        <service id="shopware.snippet_validator" class="%shopware.snippet_validator.class%">
+        <service id="shopware.snippet_validator" class="Shopware\Components\Snippet\SnippetValidator">
             <argument type="service" id="dbal_connection" />
         </service>
 
-        <service id="shopware.snippet_query_handler" class="%shopware.snippet_query_handler.class%">
+        <service id="shopware.snippet_query_handler" class="Shopware\Components\Snippet\QueryHandler">
             <argument>%kernel.root_dir%/snippets/</argument>
         </service>
-        <service id="shopware.cache_manager" class="%shopware.cache_manager.class%">
+        <service id="shopware.cache_manager" class="Shopware\Components\CacheManager">
             <argument type="service" id="service_container" />
         </service>
 
-        <service id="MediaSubscriber" class="%media_subscriber.class%" public="false">
+        <service id="MediaSubscriber" class="Shopware\Models\Media\MediaSubscriber" public="false">
             <tag name="doctrine.event_subscriber" />
             <argument type="service" id="service_container" />
         </service>
 
-        <service id="thumbnail_generator_basic" class="%thumbnail_generator_basic.class%">
+        <service id="thumbnail_generator_basic" class="Shopware\Components\Thumbnail\Generator\Basic">
             <argument type="service" id="config" />
             <argument type="service" id="shopware_media.media_service" />
         </service>
 
-        <service id="thumbnail_manager" class="%thumbnail_manager.class%">
+        <service id="thumbnail_manager" class="Shopware\Components\Thumbnail\Manager">
             <argument type="service" id="thumbnail_generator_basic" />
             <argument>%kernel.root_dir%</argument>
             <argument type="service" id="events" />
             <argument type="service" id="shopware_media.media_service" />
         </service>
 
-        <service id="multi_edit.product" class="%multi_edit.product.class%">
+        <service id="multi_edit.product" class="Shopware\Components\MultiEdit\Resource\Product">
             <argument type="service" id="multi_edit.product.dql_helper" />
             <argument type="service" id="multi_edit.product.grammar" />
             <argument type="service" id="multi_edit.product.value" />
@@ -407,44 +298,44 @@
             <argument type="service" id="multi_edit.product.backup" />
         </service>
 
-        <service id="multi_edit.product.value" class="%multi_edit.product.value.class%">
+        <service id="multi_edit.product.value" class="Shopware\Components\MultiEdit\Resource\Product\Value">
             <argument type="service" id="multi_edit.product.dql_helper" />
         </service>
 
-        <service id="multi_edit.product.dql_helper" class="%multi_edit.product.dql_helper.class%">
+        <service id="multi_edit.product.dql_helper" class="Shopware\Components\MultiEdit\Resource\Product\DqlHelper">
             <argument type="service" id="shopware.db" />
             <argument type="service" id="models" />
             <argument type="service" id="events" />
         </service>
 
-        <service id="multi_edit.product.backup" class="%multi_edit.product.backup.class%">
+        <service id="multi_edit.product.backup" class="Shopware\Components\MultiEdit\Resource\Product\Backup">
             <argument type="service" id="multi_edit.product.dql_helper" />
             <argument type="service" id="config" />
         </service>
 
-        <service id="multi_edit.product.filter" class="%multi_edit.product.filter.class%">
+        <service id="multi_edit.product.filter" class="Shopware\Components\MultiEdit\Resource\Product\Filter">
             <argument type="service" id="multi_edit.product.dql_helper" />
         </service>
 
-        <service id="multi_edit.product.queue" class="%multi_edit.product.queue.class%">
+        <service id="multi_edit.product.queue" class="Shopware\Components\MultiEdit\Resource\Product\Queue">
             <argument type="service" id="multi_edit.product.dql_helper" />
             <argument type="service" id="multi_edit.product.filter" />
             <argument type="service" id="multi_edit.product.backup" />
         </service>
 
-        <service id="multi_edit.product.batch_process" class="%multi_edit.product.batch_process.class%">
+        <service id="multi_edit.product.batch_process" class="Shopware\Components\MultiEdit\Resource\Product\BatchProcess">
             <argument type="service" id="multi_edit.product.dql_helper" />
             <argument type="service" id="multi_edit.product.filter" />
             <argument type="service" id="multi_edit.product.queue" />
             <argument type="service" id="config" />
         </service>
 
-        <service id="multi_edit.product.grammar" class="%multi_edit.product.grammar.class%">
+        <service id="multi_edit.product.grammar" class="Shopware\Components\MultiEdit\Resource\Product\Grammar">
             <argument type="service" id="multi_edit.product.dql_helper" />
             <argument type="service" id="events" />
         </service>
 
-        <service id="legacy_struct_converter" class="%legacy_struct_converter.class%">
+        <service id="legacy_struct_converter" class="Shopware\Components\Compatibility\LegacyStructConverter">
             <argument type="service" id="config" />
             <argument type="service" id="shopware_storefront.context_service" />
             <argument type="service" id="events" />
@@ -455,99 +346,99 @@
             <argument type="service" id="service_container" />
         </service>
 
-        <service id="legacy_event_manager" class="%legacy_event_manager.class%">
+        <service id="legacy_event_manager" class="Shopware\Components\Compatibility\LegacyEventManager">
             <argument type="service" id="events" />
             <argument type="service" id="config" />
             <argument type="service" id="shopware_storefront.context_service" />
         </service>
 
-        <service id="query_alias_mapper" class="%query_alias_mapper.class%">
+        <service id="query_alias_mapper" class="Shopware\Components\QueryAliasMapper">
             <factory class="Shopware\Components\QueryAliasMapper" method="createFromConfig" />
             <argument type="service" id="config" />
         </service>
 
-        <service id="file_system" class="%file_system.class%" />
+        <service id="file_system" class="Symfony\Component\Filesystem\Filesystem" />
 
-        <service id="first_run_wizard_plugin_store" class="%first_run_wizard_plugin_store.class%">
+        <service id="first_run_wizard_plugin_store" class="Shopware\Bundle\PluginInstallerBundle\Service\FirstRunWizardPluginStoreService">
             <argument type="service" id="shopware_plugininstaller.plugin_installer_struct_hydrator" />
             <argument type="service" id="shopware_plugininstaller.plugin_service_local" />
             <argument type="service" id="shopware_plugininstaller.store_client" />
         </service>
 
-        <service id="http_cache_warmer" class="%http_cache_warmer.class%">
+        <service id="http_cache_warmer" class="Shopware\Components\HttpCache\CacheWarmer">
             <argument type="service" id="dbal_connection" />
             <argument type="service" id="corelogger" />
             <argument type="service" id="guzzle_http_client_factory" />
         </service>
 
-        <service id="shop_page_menu" class="%shop_page_menu.class%">
+        <service id="shop_page_menu" class="Shopware\Components\SitePageMenu">
             <argument type="service" id="dbal_connection" />
         </service>
 
-        <service id="emotion_device_configuration" class="%emotion_device_configuration.class%">
+        <service id="emotion_device_configuration" class="Shopware\Components\Emotion\DeviceConfiguration">
             <argument type="service" id="dbal_connection" />
         </service>
 
-        <service id="validator.validator_factory" class="%validator.validator_factory.class%" public="false">
+        <service id="validator.validator_factory" class="Shopware\Bundle\FormBundle\DependencyInjection\Factory\ConstraintValidatorFactory" public="false">
             <argument type="service" id="service_container" />
             <argument type="collection" />
         </service>
 
-        <service id="validator" class="%validator.class%" >
+        <service id="validator" class="Symfony\Component\Validator\Validator\ValidatorInterface" >
             <factory class="Shopware\Components\DependencyInjection\Bridge\Validator" method="create" />
             <argument type="service" id="ModelConfig" />
             <argument type="service" id="validator.validator_factory" />
         </service>
 
-        <service id="validator.email" class="%validator.email.class%" />
+        <service id="validator.email" class="Shopware\Components\Validator\EmailValidator" />
 
-        <service id="sitemapxml.repository" class="%sitemapxml.repository.class%">
+        <service id="sitemapxml.repository" class="Shopware\Components\SitemapXMLRepository">
             <argument type="service" id="models" />
             <argument type="service" id="shopware_storefront.context_service" />
         </service>
 
-        <service id="AttributeSubscriber" class="%attribute_subscriber.class%">
+        <service id="AttributeSubscriber" class="Shopware\Components\AttributeSubscriber">
             <argument type="service" id="service_container" />
             <tag name="shopware.event_subscriber" />
         </service>
 
-        <service id="ErrorSubscriber" class="%error_subscriber.class%">
+        <service id="ErrorSubscriber" class="Shopware\Components\ErrorSubscriber">
             <tag name="shopware.event_subscriber" />
         </service>
 
-        <service id="config_writer" class="%config_writer.class%">
+        <service id="config_writer" class="Shopware\Components\ConfigWriter">
             <argument type="service" id="dbal_connection" />
         </service>
 
-        <service id="shopware.plugin.config_writer" class="%shopware.plugin.config_writer.class%">
+        <service id="shopware.plugin.config_writer" class="Shopware\Components\Plugin\ConfigWriter">
             <argument type="service" id="models" />
         </service>
 
-        <service id="shopware.plugin.cached_config_reader" class="%shopware.plugin.cached_config_reader.class%">
+        <service id="shopware.plugin.cached_config_reader" class="Shopware\Components\Plugin\CachedConfigReader">
             <argument type="service" id="shopware.plugin.config_reader" />
         </service>
 
-        <service id="shopware.plugin.config_reader" class="%shopware.plugin.config_reader.class%">
+        <service id="shopware.plugin.config_reader" class="Shopware\Components\Plugin\DBALConfigReader">
             <argument type="service" id="dbal_connection" />
         </service>
 
-        <service id="shopware_product_stream.criteria_factory" class="%shopware_product_stream.criteria_factory.class%">
+        <service id="shopware_product_stream.criteria_factory" class="Shopware\Components\ProductStream\CriteriaFactory">
             <argument type="service" id="shopware_search.store_front_criteria_factory" />
         </service>
 
-        <service id="shopware_product_stream.repository" class="%shopware_product_stream.repository.class%">
+        <service id="shopware_product_stream.repository" class="Shopware\Components\ProductStream\Repository">
             <argument type="service" id="dbal_connection" />
         </service>
 
-        <service id="shopware_product_stream.facet_filter" class="%shopware_product_stream.facet_filter.class%" >
+        <service id="shopware_product_stream.facet_filter" class="Shopware\Components\ProductStream\FacetFilter" >
             <argument type="service" id="config" />
         </service>
 
-        <service id="shopware.upload_max_size_validator" class="%shopware.upload_max_size_validator.class%">
+        <service id="shopware.upload_max_size_validator" class="Shopware\Components\UploadMaxSizeValidator">
             <tag name="shopware.event_subscriber" />
         </service>
 
-        <service id="shopware.csrftoken_validator" class="%shopware.csrftoken_validator.class%">
+        <service id="shopware.csrftoken_validator" class="Shopware\Components\CSRFTokenValidator">
             <argument type="service" id="service_container" />
             <argument>%shopware.csrfProtection.frontend%</argument>
             <argument>%shopware.csrfProtection.backend%</argument>
